@@ -17,7 +17,6 @@ export class DashboardComponent implements OnInit {
   }
 
   searchSummonerName() {
-    console.log("Hola mundooooooo");
     localStorage.setItem('summonerName', this.summonerName);
   }
 
