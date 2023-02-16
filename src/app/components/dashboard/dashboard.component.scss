@@ -1,0 +1,51 @@
+.dashboard {
+    .landing_page {
+        height: calc(100vh - 60px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .information {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            .game {
+                font-family: beaufort;
+                font-size: 40px;
+                // margin: 0;
+                color: #FFFFFF;
+            }
+            .section_input {
+                display: flex;
+                width: 450px;
+                .input_search {
+                    height: 43px;
+                    font-size: 29px;
+                    background: none;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 5px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .icon_arrow_down {
+            bottom: 17px;
+            position: relative;
+            animation-name: moviendrew;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;	
+            font-size: 40px;
+        }
+    }
+}
+
+@keyframes moviendrew {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
