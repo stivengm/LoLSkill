@@ -3,8 +3,8 @@
         <div class="information">
             <p class="game">LEAGUE OF LEGENDS</p>
             <div class="section_input">
-                <input type="text" class="input_search" placeholder="{{ placeHolder }}" name="" id="">
-                <div class="section_search_icon">
+                <input type="text" class="input_search" placeholder="{{ placeHolder }}" name="summonerName" id="" [(ngModel)]="summonerName" autocomplete="off">
+                <div class="section_search_icon" (click)="searchSummonerName()">
                     <span class="material-symbols-outlined">
                         search
                     </span>
