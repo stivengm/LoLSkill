@@ -12,6 +12,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { ChampionsComponent } from './components/champions/champions.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { FreeChampionsComponent } from './widgets/free-champions/free-champions.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     BlogComponent,
     ChampionsComponent,
     AboutComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    FreeChampionsComponent
   ],
   imports: [
     BrowserModule,
