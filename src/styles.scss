@@ -3,4 +3,27 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(./assets/background_image.jpg);
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 640px) {
+    .navbar {
+        .search {
+            display: none;
+        }
+    }
+    .dashboard {
+        .landing_page {
+            justify-content: initial !important;
+            display: block !important;
+            .information {
+                .section_input {
+                    width: 100% !important;
+                    input {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
 }
