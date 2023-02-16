@@ -19,13 +19,27 @@
             .section_input {
                 display: flex;
                 width: 450px;
+                border: 1px solid #FFFFFF;
+                border-radius: 5px;
                 .input_search {
                     height: 43px;
                     font-size: 29px;
                     background: none;
-                    border: 1px solid #FFFFFF;
+                    border: none;
                     border-radius: 5px;
                     color: #FFFFFF;
+                    flex: 1;
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+                .section_search_icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-left: 1px solid #FFFFFF;
+                    cursor: pointer;
+                    width: 45px;
                 }
             }
         }
