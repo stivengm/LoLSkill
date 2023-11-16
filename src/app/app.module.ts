@@ -16,6 +16,7 @@ import { FreeChampionsComponent } from './widgets/free-champions/free-champions.
 
 // Services
 import { HttpClientModule } from '@angular/common/http';
+import { ChampionsAboutComponent } from './components/champions-about/champions-about.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     ChampionsComponent,
     AboutComponent,
     ContactUsComponent,
-    FreeChampionsComponent
+    FreeChampionsComponent,
+    ChampionsAboutComponent
   ],
   imports: [
     BrowserModule,
