@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GetChampionsService } from 'src/app/core/services/get-champions.service';
 
 @Component({
   selector: 'app-champions-about',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./champions-about.component.scss']
 })
 export class ChampionsAboutComponent {
+
+
+  constructor(public championService: GetChampionsService) {
+
+  }
+
+  ngOnInit() {
+    console.log(this.championService);
+  }
 
 }

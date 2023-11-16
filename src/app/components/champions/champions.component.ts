@@ -16,7 +16,7 @@ export class ChampionsComponent {
 
   ngOnInit() {
     this.championService.getChampions().subscribe((champions: ChampionsModel) => {
-
+      
       let keys = Object.keys(champions.data);
       var newObject = Object.entries(champions.data);
 

@@ -8,7 +8,7 @@ export interface ChampionsModel {
 export interface data {
     id: string,
     name: string,
-    "key": "266",
+    key: string,
     title: string,
     version: string,
     blurb: string,
