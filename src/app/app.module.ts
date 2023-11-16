@@ -14,6 +14,9 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { FreeChampionsComponent } from './widgets/free-champions/free-champions.component';
 
+// Services
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +32,8 @@ import { FreeChampionsComponent } from './widgets/free-champions/free-champions.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
