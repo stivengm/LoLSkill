@@ -23,6 +23,7 @@ import { MatchesComponent } from './components/account/matches/matches.component
 
 // Services
 import { HttpClientModule } from '@angular/common/http';
+import { InfoAccountComponent } from './components/widgets/info-account/info-account.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
     PerformanceComponent,
     ChampionMaestriesComponent,
     LeaguesComponent,
-    MatchesComponent
+    MatchesComponent,
+    InfoAccountComponent
   ],
   imports: [
     BrowserModule,
