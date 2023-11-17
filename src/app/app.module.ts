@@ -13,10 +13,16 @@ import { ChampionsComponent } from './components/champions/champions.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { FreeChampionsComponent } from './widgets/free-champions/free-champions.component';
+import { ChampionsAboutComponent } from './components/champions-about/champions-about.component';
+import { SummaryComponent } from './components/account/summary/summary.component';
+import { CurrentGameComponent } from './components/account/current-game/current-game.component';
+import { PerformanceComponent } from './components/account/championPerformance/performance/performance.component';
+import { ChampionMaestriesComponent } from './components/account/championPerformance/champion-maestries/champion-maestries.component';
+import { LeaguesComponent } from './components/account/leagues/leagues.component';
+import { MatchesComponent } from './components/account/matches/matches.component';
 
 // Services
 import { HttpClientModule } from '@angular/common/http';
-import { ChampionsAboutComponent } from './components/champions-about/champions-about.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +35,13 @@ import { ChampionsAboutComponent } from './components/champions-about/champions-
     AboutComponent,
     ContactUsComponent,
     FreeChampionsComponent,
-    ChampionsAboutComponent
+    ChampionsAboutComponent,
+    SummaryComponent,
+    CurrentGameComponent,
+    PerformanceComponent,
+    ChampionMaestriesComponent,
+    LeaguesComponent,
+    MatchesComponent
   ],
   imports: [
     BrowserModule,
