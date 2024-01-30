@@ -11,6 +11,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'summoner/LAN/:summonerName',
+    loadChildren: () => import('./components/account/account.module').then(m => m.AccountModule)
+  },
+  {
     path: 'champions',
     component: ChampionsComponent,
     pathMatch: 'full'
