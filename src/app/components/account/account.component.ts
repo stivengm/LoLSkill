@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AccountComponent {
 
+  region = "";
+
+  ngOnInit() {
+
+    var location = window.location.pathname;
+    var splitLocation = location.split('/');
+    this.region = splitLocation[2];
+    
+  }
+
 }
