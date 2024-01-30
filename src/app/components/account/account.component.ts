@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AccountModel } from 'src/app/core/models/account.model';
 
 import { GetAccountService } from 'src/app/core/services/get-account.service';
 
@@ -10,7 +11,13 @@ import { GetAccountService } from 'src/app/core/services/get-account.service';
 export class AccountComponent {
 
   region = "";
-  summonerName = "XGameGamePlay0X"
+
+  account: AccountModel = {
+    gameName: '',
+    puuid: '',
+    tagLine: ''
+  };
+
 
   constructor(public getAccountService: GetAccountService) {
 
@@ -18,9 +25,9 @@ export class AccountComponent {
 
   ngOnInit() {
 
-    this.getAccountService.getAccount().subscribe(( data ) => {
-      console.log(data);
-      
+    this.getAccountService.getAccount().subscribe(( account: AccountModel ) => {
+      console.log(account);
+      this.account = account;
     })
 
     var location = window.location.pathname;

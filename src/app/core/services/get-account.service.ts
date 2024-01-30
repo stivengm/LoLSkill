@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { AccountModel } from '../models/account.model';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,7 @@ export class GetAccountService {
 
   getAccount() {
 
-    return this.http.get(this.url);
+    return this.http.get<AccountModel>(this.url);
 
   }
 }
