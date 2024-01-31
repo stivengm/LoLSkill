@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AccountModel } from 'src/app/core/models/account.model';
-import { SummonerModel } from 'src/app/core/models/summoner.model';
+
+import { AccountModel, SummonerModel } from 'src/app/core/models/';
 
 import { GetAccountService } from 'src/app/core/services/get-account.service';
 
@@ -47,6 +47,10 @@ export class AccountComponent {
       console.log(summoner);
       this.summoner = summoner;
       this.img_profile = "https://ddragon.leagueoflegends.com/cdn/14.2.1/img/profileicon/" + summoner.profileIconId + ".png";
+    });
+
+    this.getAccountService.getChampionsMaestry().subscribe(( championsMaestry ) => {
+      console.log(championsMaestry);
     });
 
 

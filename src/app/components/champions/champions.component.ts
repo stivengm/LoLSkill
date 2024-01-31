@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+
 import { GetChampionsService } from 'src/app/core/services/get-champions.service';
+
 import { ChampionsModel, data } from 'src/app/core/models/champions.model';
 
 @Component({
