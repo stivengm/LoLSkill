@@ -21,6 +21,7 @@ import { InfoAccountComponent } from './components/widgets/info-account/info-acc
 
 // Modules
 import { AccountModule } from 'src/app/components/account/account.module';
+import { LoaderComponent } from './components/widgets/loader/loader.component';
 
 @NgModule({
   schemas: [
@@ -38,6 +39,7 @@ import { AccountModule } from 'src/app/components/account/account.module';
     FreeChampionsComponent,
     ChampionsAboutComponent,
     InfoAccountComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
