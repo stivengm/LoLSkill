@@ -17,16 +17,24 @@ export class ChampionsComponent {
 
 
   ngOnInit() {
-    this.championService.getChampions().subscribe((champions: ChampionsModel) => {
-      
-      let keys = Object.keys(champions.data);
-      var newObject = Object.entries(champions.data);
+    var championsSessionStorage = sessionStorage.getItem('champions');
 
-      for (let i = 0; i < keys.length; i++) {
-        this.champions.push(newObject[i][1])
-      }
+    if (championsSessionStorage == null) {
+      this.championService.getChampions().subscribe((champions: ChampionsModel) => {
+        
+        let keys = Object.keys(champions.data);
+        var newObject = Object.entries(champions.data);
+  
+        for (let i = 0; i < keys.length; i++) {
+          this.champions.push(newObject[i][1])
+        }
+  
+        sessionStorage.setItem('champions', JSON.stringify(this.champions));
+      });
+    } else {
 
-    });
+      this.champions = JSON.parse(championsSessionStorage);
+    }
   }
 
 
