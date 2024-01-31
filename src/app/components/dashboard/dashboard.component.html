@@ -13,5 +13,26 @@
             <span class="icon_arrow_down material-symbols-outlined">expand_more</span>
         </div>
     </div>
+
+
+    <h1>Campeones gratis de la semana</h1>
+
+    <div *ngFor="let champion of freeChampions">
+        {{ champion }}
+    </div>
+
+
+    <h1>Campeones gratis para nuevos jugadores</h1>
+    <p>Recuerda que estos campeones se juegan máximo hasta nivel {{ maxNewPlayerLevel }}</p>
+
+    <div *ngFor="let champion of freeChampions">
+        {{ champion }}
+    </div>
+
+
+
+
+
+
     <app-blog></app-blog>
 </div>
