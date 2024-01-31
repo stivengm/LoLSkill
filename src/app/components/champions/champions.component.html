@@ -1,6 +1,6 @@
 <div class="champions">
     <h1>Campeones</h1>
-    <div class="item" *ngFor="let champion of champions" style="background-image: linear-gradient(rgba(15, 7, 19, 0.9), rgba(15, 7, 19, 0.9)), url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{ champion.id }}_0.jpg')">
+    <div class="item" *ngFor="let champion of champions" (click)="openChampion(champion)" style="background-image: linear-gradient(rgba(15, 7, 19, 0.9), rgba(15, 7, 19, 0.9)), url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/{{ champion.id }}_0.jpg')">
         <div class="info_champion">
             <img src="https://ddragon.leagueoflegends.com/cdn/14.2.1/img/champion/{{champion.image.full}}" alt="{{champion.id}}" class="img_champion">
             <p class="name_champion">{{ champion.name }}</p>

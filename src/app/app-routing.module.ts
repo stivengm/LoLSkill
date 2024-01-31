@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren: () => import('./components/account/account.module').then(m => m.AccountModule)
   },
   {
+    path: 'champion/:champion',
+    loadChildren: () => import('./components/champion-info/champion-info.module').then(m => m.ChampionInfoModule)
+  },
+  {
     path: 'champions',
     component: ChampionsComponent,
     pathMatch: 'full'

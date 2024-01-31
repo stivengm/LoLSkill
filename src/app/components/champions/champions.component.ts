@@ -37,5 +37,9 @@ export class ChampionsComponent {
     }
   }
 
+  openChampion(e: any) {
+    console.log(e);
+  }
+
 
 }

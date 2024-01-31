@@ -14,6 +14,8 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { FreeChampionsComponent } from './widgets/free-champions/free-champions.component';
 import { ChampionsAboutComponent } from './components/champions-about/champions-about.component';
+import { LoaderComponent } from './components/widgets/loader/loader.component';
+import { ChampionInfoComponent } from './components/champion-info/champion-info.component';
 
 // Services
 import { HttpClientModule } from '@angular/common/http';
@@ -21,7 +23,8 @@ import { InfoAccountComponent } from './components/widgets/info-account/info-acc
 
 // Modules
 import { AccountModule } from 'src/app/components/account/account.module';
-import { LoaderComponent } from './components/widgets/loader/loader.component';
+import { ChampionInfoModule } from 'src/app/components/champion-info/champion-info.module';
+
 
 @NgModule({
   schemas: [
@@ -40,13 +43,15 @@ import { LoaderComponent } from './components/widgets/loader/loader.component';
     ChampionsAboutComponent,
     InfoAccountComponent,
     LoaderComponent,
+    ChampionInfoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    AccountModule
+    AccountModule,
+    ChampionInfoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
